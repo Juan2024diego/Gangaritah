@@ -24,3 +24,8 @@ class CityWeather:
             weather["temp"] = self.temp
             return weather
 
+
+class UserAuth:
+    def __init__(self, email, password):
+        self.email = email
+        self.password = password

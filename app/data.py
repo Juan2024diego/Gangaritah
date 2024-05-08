@@ -1,4 +1,4 @@
-data =[
+cities =[
     {
     "name": "cali",
     "weather": [
@@ -124,4 +124,8 @@ data =[
     },
     "cod": 200
     }
+]
+
+users = [
+    {"email": "climate@gmail.com", "password": "12345"}
 ]
