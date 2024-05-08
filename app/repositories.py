@@ -2,7 +2,7 @@ from app.models import CityWeather
 from app.data import data
 
 
-class Weather:
+class WeatherRepository:
 	@staticmethod
 	def get_by_city(city, type_degrees):
 		search = [item for item in data if item['name'] == city]
