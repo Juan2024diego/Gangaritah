@@ -4,7 +4,7 @@ from app.data import data
 
 class WeatherRepository:
 	@staticmethod
-	def get_by_city(city, type_degrees):
+	def get_by_city(city, units):
 		search = [item for item in data if item['name'] == city]
 		if len(search) > 0:
 			return CityWeather(
@@ -13,6 +13,6 @@ class WeatherRepository:
 				search[0]["main"]["temp"],
 				search[0]["main"]["humidity"],
 				search[0]["wind"]["speed"],
-				type_degrees
+				units
 			).to_json()
   

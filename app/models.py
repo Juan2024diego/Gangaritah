@@ -1,13 +1,13 @@
 class CityWeather:
 
 
-    def __init__(self, name, weather, temp, humidity, wind_speed, type_degrees):
+    def __init__(self, name, weather, temp, humidity, wind_speed, units):
         self.name = name
         self.weather = weather
         self.temp = temp
         self.humidity = humidity
         self.wind_speed = wind_speed
-        self.type_degrees = type_degrees
+        self.units = units
     
 
     def to_json(self):
@@ -17,10 +17,10 @@ class CityWeather:
                 "humidity": self.humidity,
                 "wind_speed": self.wind_speed
             }
-        if self.type_degrees == "celsius":
+        if self.units == "celsius":
             weather["temp"] = self.temp - 273.15
             return weather
-        if self.type_degrees == "kelvin":
+        if self.units == "kelvin":
             weather["temp"] = self.temp
             return weather
 
