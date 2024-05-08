@@ -1,6 +1,8 @@
 from flask import jsonify, request
 from app import app, validators
 from app.services import WeatherService
+
+
 @app.route('/weather')
 def get_weather():
     city = request.args.get('city')

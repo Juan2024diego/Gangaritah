@@ -1,6 +1,6 @@
 data =[
     {
-    "name": "Cali",
+    "name": "cali",
     "weather": [
         {
         "id": 802,
@@ -25,7 +25,7 @@ data =[
     "cod": 200
     },
     {
-    "name": "Bogotá",
+    "name": "bogota",
     "weather": [
         {
         "id": 800,
@@ -50,7 +50,7 @@ data =[
     "cod": 200
     },
     {
-    "name": "Medellín",
+    "name": "medellin",
     "weather": [
         {
         "id": 801,
@@ -75,7 +75,7 @@ data =[
     "cod": 200
     },
     {
-    "name": "Cartagena",
+    "name": "cartagena",
     "weather": [
         {
         "id": 801,
