@@ -100,7 +100,7 @@ cities =[
     "cod": 200
     },
     {
-    "name": "Barranquilla",
+    "name": "barranquilla",
     "weather": [
         {
         "id": 803,

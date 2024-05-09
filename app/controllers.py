@@ -21,5 +21,5 @@ def login():
     password = request.json.get('password')
     login = UserService.login_user(UserAuth(email, password))
     if (login["logged"]):
-        return jsonify({"status": login["status"], "token": os.getenv("API_KEY")})
-    return jsonify({"status": login["status"]})
+        return jsonify({"status": login["status"], "token": os.getenv("API_KEY")}), 200
+    return jsonify({"status": login["status"]}), 403
